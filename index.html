@@ -21,7 +21,7 @@
         }
     </script>
     <style>
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         .timeline-line { position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background-color: #e5e7eb; z-index: 0; }
         @media (max-width: 768px) { .timeline-line { left: 20px; } }
     </style>
@@ -44,7 +44,7 @@
         </div>
     </nav>
 
-    <div id="about" class="bg-white pt-32 pb-20">
+    <div class="bg-white pt-32 pb-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
             <div class="md:w-2/3">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
@@ -67,7 +67,7 @@
             <div class="md:w-1/3 mt-10 md:mt-0 flex justify-center">
                 <div class="w-48 h-48 rounded-full bg-gray-200 border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
                     <span class="text-4xl text-gray-400"><i class="fas fa-user"></i></span>
-                </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -102,16 +102,20 @@
                     </div>
                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full"></div>
                     <div class="order-1 md:w-5/12 px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-l-4 border-blue-600">
-                        <p class="text-sm text-gray-700">Leading performance optimization for LLVM infrastructure on AIX/POWER platforms. Reduced memory safety incidents by 40% using custom ASan/UBSan implementations.</p>
+                        <p class="text-sm text-gray-700">
+                            Leading performance optimization for LLVM infrastructure on AIX/POWER platforms. Reduced memory safety incidents by 40% using custom ASan/UBSan implementations.
+                        </p>
                     </div>
                 </div>
 
                 <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
                     <div class="order-1 md:w-5/12 order-last md:order-first px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-r-4 border-blue-500 text-right md:text-left">
-                        <p class="text-sm text-gray-700">Built billing systems for 7M+ QuickBooks users. Designed idempotency frameworks and disaster recovery systems. Optimized Checkout API to improve conversion by 40%.</p>
+                        <p class="text-sm text-gray-700">
+                            Built billing systems for 7M+ QuickBooks users. Designed idempotency frameworks and disaster recovery systems (RTO < 15 mins). Optimized Checkout API to improve conversion by 40%.
+                        </p>
                     </div>
                     <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"></div>
-                    <div class="order-1 md:w-5/12 px-6 text-left">
+                    <div class="order-1 md:w-5/12 px-6 text-left md:text-left">
                         <h3 class="font-bold text-xl text-gray-900">Intuit</h3>
                         <p class="text-blue-500 font-semibold">Senior Software Engineer</p>
                         <p class="text-sm text-gray-500">May 2023 – Sept 2024</p>
@@ -157,121 +161,13 @@
                         <p class="text-sm text-gray-700">
                             Optimized graph search latency by 85% (800ms to 120ms). Built data quality frameworks using Apache Spark and React for trading platforms.
                         </p>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-white py-20 border-t">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12">Academic & Deep Tech Research</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <span class="text-xs font-bold text-blue-600 uppercase">AI & Recommendation</span>
-                    <h3 class="text-xl font-bold mt-2">GetMate P2P Learning Platform</h3>
-                    <p class="text-gray-600 mt-2 text-sm">Developed at IIT Madras. Built a novel recommendation engine using TensorFlow and Node.js that predicts student interests based on global trends and content-based filtering.</p>
-                </div>
-
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <span class="text-xs font-bold text-red-600 uppercase">Systems Programming</span>
-                    <h3 class="text-xl font-bold mt-2">Mini-Java Compiler Design</h3>
-                    <p class="text-gray-600 mt-2 text-sm">Built a full Java-based compiler from scratch. Implemented type-checking, miniIR generation, and aggressive optimizations like loop transformations and function inlining.</p>
-                </div>
-
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <span class="text-xs font-bold text-purple-600 uppercase">LLVM Analysis</span>
-                    <h3 class="text-xl font-bold mt-2">Program Analysis Passes</h3>
-                    <p class="text-gray-600 mt-2 text-sm">Designed LLVM passes in C++ for live variable analysis, safety analysis, and dynamic instrumentation for code verification.</p>
-                </div>
-
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <span class="text-xs font-bold text-green-600 uppercase">Computer Vision</span>
-                    <h3 class="text-xl font-bold mt-2">CNN Image Classification</h3>
-                    <p class="text-gray-600 mt-2 text-sm">Trained CNNs on CIFAR-10 achieving 89% accuracy. Implemented guided backpropagation to visualize neuron discovery and abstract image representation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="projects" class="bg-gray-50 py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-4">Project Gallery</h2>
-            <p class="text-center text-gray-500 mb-12">Creative works ranging from childhood games to utility apps.</p>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-red-100 flex items-center justify-center">
-                        <i class="fas fa-ghost text-4xl text-red-400"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">Amy Vs Zombie</h4>
-                        <p class="text-xs text-gray-500 mt-1">Android • C++ • Game Engine</p>
-                        <p class="text-sm text-gray-600 mt-2">A UI-intensive battle game with collision detection and animation systems.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-indigo-100 flex items-center justify-center">
-                        <i class="fas fa-cards text-4xl text-indigo-400"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">Lotis AI Card Game</h4>
-                        <p class="text-xs text-gray-500 mt-1">Android • AI • Java</p>
-                        <p class="text-sm text-gray-600 mt-2">AI-powered card game with built-in logic for competitive mobile gaming.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-yellow-100 flex items-center justify-center">
-                        <i class="fas fa-calculator text-4xl text-yellow-500"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">One Even (2048 Style)</h4>
-                        <p class="text-xs text-gray-500 mt-1">Android • Logic Game</p>
-                        <p class="text-sm text-gray-600 mt-2">Unique number calculation mechanic based on the popular 2048 format.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-clipboard-list text-4xl text-blue-400"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">Virtual Notice Board</h4>
-                        <p class="text-xs text-gray-500 mt-1">Inter-College System</p>
-                        <p class="text-sm text-gray-600 mt-2">Digital solution for attendance, time-tables, and route tracking.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
-                        <i class="fas fa-microchip text-4xl text-gray-400"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">BigInt C++ Library</h4>
-                        <p class="text-xs text-gray-500 mt-1">C++ • Memory Management</p>
-                        <p class="text-sm text-gray-600 mt-2">Handled arbitrary length signed integers with custom memory allocation.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                    <div class="w-full h-48 bg-green-100 flex items-center justify-center">
-                        <i class="fas fa-bolt text-4xl text-green-400"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold">Laser Tank (Legacy)</h4>
-                        <p class="text-xs text-gray-500 mt-1">C++ • Graphics</p>
-                        <p class="text-sm text-gray-600 mt-2">Childhood project featuring reflective mirrors and graphical physics.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-white py-20">
+    <div id="projects" class="bg-white py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -279,7 +175,7 @@
                     <div class="mb-6">
                         <h3 class="font-bold text-lg">IIT Madras</h3>
                         <p class="text-gray-600">M.Tech in Computer Science (2016 - 2018)</p>
-                        <p class="text-sm text-gray-500 mt-2">CGPA: 8.1/10 | Focus: Compiler Design, Deep Learning</p>
+                        <p class="text-sm text-gray-500 mt-2">CGPA: 8.1/10 | Coursework: Compiler Design, Deep Learning, Distributed Systems</p>
                     </div>
                     <div>
                         <h3 class="font-bold text-lg">Medicaps Institute</h3>
@@ -298,17 +194,17 @@
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-star text-blue-500 mt-1 mr-3"></i>
+                            <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
                             <div>
-                                <span class="font-semibold">All India Rank 107 (GATE)</span>
-                                <p class="text-sm text-gray-500">Top 1% of applicants in India (2016).</p>
+                                <span class="font-semibold">All India Rank 107</span>
+                                <p class="text-sm text-gray-500">GATE 2016 (Top 1% in India).</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <i class="fas fa-rocket text-blue-500 mt-1 mr-3"></i>
                             <div>
                                 <span class="font-semibold">ISRO Rank 28</span>
-                                <p class="text-sm text-gray-500">All India Rank 28 in ISRO scientist recruitment.</p>
+                                <p class="text-sm text-gray-500">All India Rank 28 in ISRO recruitment exam.</p>
                             </div>
                         </li>
                     </ul>
