@@ -1,377 +1,334 @@
-Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Goyal | Senior Staff Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ibm: '#052FAD',
+                        goldman: '#7399C6',
+                        dark: '#1a1a1a',
+                        light: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; scroll-behavior: smooth; }
+        .timeline-line { position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background-color: #e5e7eb; z-index: 0; }
+        @media (max-width: 768px) { .timeline-line { left: 20px; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
-Copy
-
-                   </div>
-
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-900">Honey Goyal</span>
                 </div>
-
+                <div class="flex items-center space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-ibm">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-ibm">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-ibm">Projects</a>
+                    <a href="mailto:honeygoyal24@gmail.com" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 transition">Contact</a>
+                </div>
             </div>
-
         </div>
+    </nav>
 
+    <div id="about" class="bg-white pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    Building <span class="text-blue-600">Scalable Systems</span> <br>
+                    & Compiler Infrastructure.
+                </h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-2xl">
+                    Senior Staff Engineer with 7+ years of experience bridging the gap between 
+                    <b>Low-Level Systems</b> (LLVM, C++) and <b>High-Scale Products</b> (Golang, AI/ML).
+                </p>
+                <p class="mt-2 text-gray-500">
+                    IIT Madras Alum • Ex-Intuit • Ex-Goldman Sachs • Startup Founder
+                </p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://github.com/honey-goyal" target="_blank" class="text-3xl text-gray-700 hover:text-black"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/honeygoyal" target="_blank" class="text-3xl text-gray-700 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:honeygoyal24@gmail.com" class="text-3xl text-gray-700 hover:text-red-600"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-10 md:mt-0 flex justify-center">
+                <div class="w-48 h-48 rounded-full bg-gray-200 border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
+                    <span class="text-4xl text-gray-400"><i class="fas fa-user"></i></span>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="bg-white py-10 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-6">Core Technical Arsenal</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">C / C++</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">LLVM / Compilers</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">Java (Spring Boot)</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">Golang</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">AI / ML (TensorFlow)</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">React / Angular</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">AWS / Kubernetes</span>
+                <span class="px-4 py-2 bg-gray-100 rounded text-gray-700 font-medium">Kafka</span>
+            </div>
+        </div>
+    </div>
 
+    <div id="experience" class="bg-gray-50 py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Professional Journey</h2>
+            <div class="relative">
+                <div class="timeline-line"></div>
+                
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="order-1 md:w-5/12 text-right px-6">
+                        <h3 class="font-bold text-xl text-gray-900">IBM</h3>
+                        <p class="text-blue-600 font-semibold">Senior Compiler Developer</p>
+                        <p class="text-sm text-gray-500">Nov 2024 – Present</p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full"></div>
+                    <div class="order-1 md:w-5/12 px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-l-4 border-blue-600">
+                        <p class="text-sm text-gray-700">Leading performance optimization for LLVM infrastructure on AIX/POWER platforms. Reduced memory safety incidents by 40% using custom ASan/UBSan implementations.</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="order-1 md:w-5/12 order-last md:order-first px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-r-4 border-blue-500 text-right md:text-left">
+                        <p class="text-sm text-gray-700">Built billing systems for 7M+ QuickBooks users. Designed idempotency frameworks and disaster recovery systems. Optimized Checkout API to improve conversion by 40%.</p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-8 h-8 rounded-full"></div>
+                    <div class="order-1 md:w-5/12 px-6 text-left">
+                        <h3 class="font-bold text-xl text-gray-900">Intuit</h3>
+                        <p class="text-blue-500 font-semibold">Senior Software Engineer</p>
+                        <p class="text-sm text-gray-500">May 2023 – Sept 2024</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="order-1 md:w-5/12 text-right px-6">
+                        <h3 class="font-bold text-xl text-gray-900">Nurture Farm</h3>
+                        <p class="text-green-600 font-semibold">Senior Software Engineer</p>
+                        <p class="text-sm text-gray-500">Aug 2021 – Apr 2023</p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-green-600 shadow-xl w-8 h-8 rounded-full"></div>
+                    <div class="order-1 md:w-5/12 px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-l-4 border-green-600">
+                        <p class="text-sm text-gray-700">
+                            Built a communication platform handling 5M+ daily messages. Integrated WhatsApp Business API for 60% higher engagement and architected campaign orchestration microservices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="order-1 md:w-5/12 order-last md:order-first px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-r-4 border-purple-600 text-right md:text-left">
+                        <p class="text-sm text-gray-700">
+                            <b>Founder Mindset:</b> Scaled platform from 0→1 serving 5,000+ students. Built the entire stack (Java/Angular/AWS) and AI-powered recommendation engines.
+                        </p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-purple-600 shadow-xl w-8 h-8 rounded-full"></div>
+                    <div class="order-1 md:w-5/12 px-6">
+                        <h3 class="font-bold text-xl text-gray-900">eGATE Tutor</h3>
+                        <p class="text-purple-600 font-semibold">Co-founder & Tech Lead</p>
+                        <p class="text-sm text-gray-500">Nov 2020 – Aug 2021</p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="order-1 md:w-5/12 text-right px-6">
+                        <h3 class="font-bold text-xl text-gray-900">Goldman Sachs</h3>
+                        <p class="text-indigo-900 font-semibold">Software Dev Engineer</p>
+                        <p class="text-sm text-gray-500">Jun 2018 – Oct 2020</p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-indigo-900 shadow-xl w-8 h-8 rounded-full"></div>
+                    <div class="order-1 md:w-5/12 px-6 mt-4 md:mt-0 bg-white p-6 rounded shadow-md border-l-4 border-indigo-900">
+                        <p class="text-sm text-gray-700">
+                            Optimized graph search latency by 85% (800ms to 120ms). Built data quality frameworks using Apache Spark and React for trading platforms.
+                        </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="bg-white py-20 border-t">
-
         <div class="max-w-6xl mx-auto px-4">
-
             <h2 class="text-3xl font-bold mb-12">Academic & Deep Tech Research</h2>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
                 
-
                 <div class="p-6 border rounded-xl hover:shadow-lg transition">
-
                     <span class="text-xs font-bold text-blue-600 uppercase">AI & Recommendation</span>
-
                     <h3 class="text-xl font-bold mt-2">GetMate P2P Learning Platform</h3>
-
                     <p class="text-gray-600 mt-2 text-sm">Developed at IIT Madras. Built a novel recommendation engine using TensorFlow and Node.js that predicts student interests based on global trends and content-based filtering.</p>
-
                 </div>
 
-
-
                 <div class="p-6 border rounded-xl hover:shadow-lg transition">
-
                     <span class="text-xs font-bold text-red-600 uppercase">Systems Programming</span>
-
                     <h3 class="text-xl font-bold mt-2">Mini-Java Compiler Design</h3>
-
                     <p class="text-gray-600 mt-2 text-sm">Built a full Java-based compiler from scratch. Implemented type-checking, miniIR generation, and aggressive optimizations like loop transformations and function inlining.</p>
-
                 </div>
 
-
-
                 <div class="p-6 border rounded-xl hover:shadow-lg transition">
-
                     <span class="text-xs font-bold text-purple-600 uppercase">LLVM Analysis</span>
-
                     <h3 class="text-xl font-bold mt-2">Program Analysis Passes</h3>
-
                     <p class="text-gray-600 mt-2 text-sm">Designed LLVM passes in C++ for live variable analysis, safety analysis, and dynamic instrumentation for code verification.</p>
-
                 </div>
-
-
 
                 <div class="p-6 border rounded-xl hover:shadow-lg transition">
-
                     <span class="text-xs font-bold text-green-600 uppercase">Computer Vision</span>
-
                     <h3 class="text-xl font-bold mt-2">CNN Image Classification</h3>
-
                     <p class="text-gray-600 mt-2 text-sm">Trained CNNs on CIFAR-10 achieving 89% accuracy. Implemented guided backpropagation to visualize neuron discovery and abstract image representation.</p>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
 
     <div id="projects" class="bg-gray-50 py-20">
-
         <div class="max-w-6xl mx-auto px-4">
-
             <h2 class="text-3xl font-bold text-center mb-4">Project Gallery</h2>
-
             <p class="text-center text-gray-500 mb-12">Creative works ranging from childhood games to utility apps.</p>
-
             
-
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
                 
-
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-red-100 flex items-center justify-center">
-
                         <i class="fas fa-ghost text-4xl text-red-400"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">Amy Vs Zombie</h4>
-
                         <p class="text-xs text-gray-500 mt-1">Android • C++ • Game Engine</p>
-
                         <p class="text-sm text-gray-600 mt-2">A UI-intensive battle game with collision detection and animation systems.</p>
-
                     </div>
-
                 </div>
 
-
-
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-indigo-100 flex items-center justify-center">
-
                         <i class="fas fa-cards text-4xl text-indigo-400"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">Lotis AI Card Game</h4>
-
                         <p class="text-xs text-gray-500 mt-1">Android • AI • Java</p>
-
                         <p class="text-sm text-gray-600 mt-2">AI-powered card game with built-in logic for competitive mobile gaming.</p>
-
                     </div>
-
                 </div>
 
-
-
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-yellow-100 flex items-center justify-center">
-
                         <i class="fas fa-calculator text-4xl text-yellow-500"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">One Even (2048 Style)</h4>
-
                         <p class="text-xs text-gray-500 mt-1">Android • Logic Game</p>
-
                         <p class="text-sm text-gray-600 mt-2">Unique number calculation mechanic based on the popular 2048 format.</p>
-
                     </div>
-
                 </div>
 
-
-
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-blue-100 flex items-center justify-center">
-
                         <i class="fas fa-clipboard-list text-4xl text-blue-400"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">Virtual Notice Board</h4>
-
                         <p class="text-xs text-gray-500 mt-1">Inter-College System</p>
-
                         <p class="text-sm text-gray-600 mt-2">Digital solution for attendance, time-tables, and route tracking.</p>
-
                     </div>
-
                 </div>
 
-
-
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
-
                         <i class="fas fa-microchip text-4xl text-gray-400"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">BigInt C++ Library</h4>
-
                         <p class="text-xs text-gray-500 mt-1">C++ • Memory Management</p>
-
                         <p class="text-sm text-gray-600 mt-2">Handled arbitrary length signed integers with custom memory allocation.</p>
-
                     </div>
-
                 </div>
-
-
 
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
-
                     <div class="w-full h-48 bg-green-100 flex items-center justify-center">
-
                         <i class="fas fa-bolt text-4xl text-green-400"></i>
-
                     </div>
-
                     <div class="p-4">
-
                         <h4 class="font-bold">Laser Tank (Legacy)</h4>
-
                         <p class="text-xs text-gray-500 mt-1">C++ • Graphics</p>
-
                         <p class="text-sm text-gray-600 mt-2">Childhood project featuring reflective mirrors and graphical physics.</p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
-
-Copy
-
-Copy
 
     <div class="bg-white py-20">
-
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
                 <div>
-
                     <h2 class="text-2xl font-bold mb-6">Education</h2>
-
                     <div class="mb-6">
-
                         <h3 class="font-bold text-lg">IIT Madras</h3>
-
                         <p class="text-gray-600">M.Tech in Computer Science (2016 - 2018)</p>
-
-Copy
-
-Copy
-
                         <p class="text-sm text-gray-500 mt-2">CGPA: 8.1/10 | Focus: Compiler Design, Deep Learning</p>
-
                     </div>
-
                     <div>
-
                         <h3 class="font-bold text-lg">Medicaps Institute</h3>
-
                         <p class="text-gray-600">B.E. Computer Science (2011 - 2015)</p>
-
                     </div>
-
                 </div>
-
-
 
                 <div>
-
                     <h2 class="text-2xl font-bold mb-6">Key Achievements</h2>
-
                     <ul class="space-y-4">
-
                         <li class="flex items-start">
-
                             <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
-
                             <div>
-
                                 <span class="font-semibold">EthIndia 2022 Winner</span>
-
                                 <p class="text-sm text-gray-500">Won 10,000 INR prize for blockchain innovation.</p>
-
                             </div>
-
                         </li>
-
                         <li class="flex items-start">
-
-Copy
-
-Copy
-
                             <i class="fas fa-star text-blue-500 mt-1 mr-3"></i>
-
                             <div>
-
-Copy
-
-Copy
-
                                 <span class="font-semibold">All India Rank 107 (GATE)</span>
-
                                 <p class="text-sm text-gray-500">Top 1% of applicants in India (2016).</p>
-
                             </div>
-
                         </li>
-
                         <li class="flex items-start">
-
-Copy
-
-Copy
-
                             <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
-
                             <div>
-
                                 <span class="font-semibold">ISRO Rank 28</span>
-
-Copy
-
-Copy
-
                                 <p class="text-sm text-gray-500">All India Rank 28 in ISRO scientist recruitment.</p>
-
                             </div>
-
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
 
-
-
     <footer class="bg-gray-900 text-white py-12">
-
         <div class="max-w-6xl mx-auto px-4 text-center">
-
             <h2 class="text-2xl font-bold mb-4">Let's Connect</h2>
-
             <p class="text-gray-400 mb-8">Open to discussing Distributed Systems, AI Engineering, or Compiler Infrastructure.</p>
-
             <div class="flex justify-center space-x-6 mb-8">
-
                 <a href="https://linkedin.com/in/honeygoyal" class="text-2xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-
                 <a href="mailto:honeygoyal24@gmail.com" class="text-2xl hover:text-red-400"><i class="fas fa-envelope"></i></a>
-
                 <a href="https://github.com/honey-goyal" class="text-2xl hover:text-gray-400"><i class="fab fa-github"></i></a>
-
             </div>
-
             <p class="text-sm text-gray-600">&copy; 2025 Honey Goyal. Hosted on GitHub Pages.</p>
-
         </div>
-
     </footer>
 
-
-
 </body>
-
 </html>
